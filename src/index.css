@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+.header-right li::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  bottom: -3px;
+  left: 0;
+  transition: width .2s ease-in;
+}
+
+.header-right li:hover::before {
+  width: 100%;
+}
